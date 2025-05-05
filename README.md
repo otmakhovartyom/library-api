@@ -103,3 +103,19 @@ library-api/
 1. Проверьте логи сервера
 2. Убедитесь, что БД создана
 3. Проверьте JWT-токен
+
+## 📊 Анализ качества кода (Pylint)
+Последний отчет pylint:
+```text
+************* Module auth
+auth.py:31:0: C0301: Line too long (121/100) (line-too-long)
+auth.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+...
+------------------------------------
+Your code has been rated at 5.40/10
+```
+
+Полный отчет:
+```bash
+pylint *py --output-format=text > pylint_report.txt
+```
